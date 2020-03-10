@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inspectie_App.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout VerticalOptions="Center">
+        <!-- Inloggen begint hier -->
+        <Image Source="RHDHVlogo.png"
+               Aspect="AspectFit"
+               HorizontalOptions="Center"
+               
+               HeightRequest="{OnPlatform iOS=300, Android=250}"
+               WidthRequest="{OnPlatform iOS=300, Android=250}"
+               />
+        <Label Text="Gebruikersnaam"
+               FontAttributes="Bold"/>
+        <Entry x:Name="UserNameEntry"
+               Keyboard="Email"
+               BackgroundColor="White"
+               TextColor="Black"
+               HorizontalOptions="FillAndExpand"/>
+        <Label Text="Wachtwoord"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               />
+        <Entry x:Name="PasswordEntry"
+               IsPassword="True"
+               BackgroundColor="White"
+               TextColor="Black"
+               HorizontalOptions="FillAndExpand"
+               
+               VerticalOptions="Center"/>
+        <Button x:Name="LoginButton"
+                TextColor="White"
+                Text="Log in"
+                BackgroundColor="#008CAC"
+                Clicked="LoginButton_Clicked"
+                HorizontalOptions="Center"
+                />
+
+    </StackLayout>
+
+</ContentPage>
