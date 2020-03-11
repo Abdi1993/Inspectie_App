@@ -16,5 +16,30 @@ namespace Inspectie_App
         {
             InitializeComponent();
         }
+
+        private void AddProjectBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddGebiedBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddGebouwBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddVerdiepingBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DltVerdiepingBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

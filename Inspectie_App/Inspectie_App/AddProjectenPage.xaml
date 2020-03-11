@@ -6,10 +6,55 @@
              mc:Ignorable="d"
              x:Class="Inspectie_App.AddProjectenPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        <Grid Margin="0,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            
+            <Picker Grid.Row="0" Grid.Column="1" x:Name="AddProjectPicker" BackgroundColor="LightGray" Title="Projectnaam" TitleColor="Black"></Picker>
+            <Button Grid.Row="0" Grid.Column="2" Text="+"  BackgroundColor="#008CAC" TextColor="White" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"  x:Name="AddProjectBtn" Clicked="AddProjectBtn_Clicked"/>
+            <Picker Grid.Row="1" Grid.Column="1" x:Name="AddGebiedPicker" BackgroundColor="LightGray" Title="Gebiednaam" TitleColor="Black"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="+" x:Name="AddGebiedBtn" TextColor="White" BackgroundColor="#008CAC" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"  Clicked="AddGebiedBtn_Clicked"/>
+            <Picker Grid.Row="2" Grid.Column="1" x:Name="AddGebouwPicker" BackgroundColor="LightGray" Title="Gebouwnaam" TitleColor="Black"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="+" x:Name="AddGebouwBtn" BackgroundColor="#008CAC" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" TextColor="White" Clicked="AddGebouwBtn_Clicked"/>
+            <Label Grid.Row="3"  Grid.Column="1" Text="Verdieping" />
+            <Button Grid.Row="4" Grid.Column="2" Text="+" x:Name="AddVerdiepingBtn" BackgroundColor="#008CAC" HorizontalOptions="EndAndExpand" VerticalOptions="Start" TextColor="White" Clicked="AddVerdiepingBtn_Clicked"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="Verwijderen" x:Name="DltVerdiepingBtn" BackgroundColor="#008CAC" HorizontalOptions="EndAndExpand" VerticalOptions="Center" TextColor="White" Clicked="DltVerdiepingBtn_Clicked"/>
+            <ListView Grid.Row="4" Grid.Column="1" BackgroundColor="Gray" x:Name="VerdiepingList" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="asd" FontAttributes="Bold" MinimumHeightRequest="1"/>
+                                <Label Grid.Row="0" Grid.Column="0" Text="abd" TextColor="Black"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>
