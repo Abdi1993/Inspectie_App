@@ -132,5 +132,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\rerhdhvlogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rsz_2deleteicon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

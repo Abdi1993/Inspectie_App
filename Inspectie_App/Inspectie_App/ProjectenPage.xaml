@@ -26,7 +26,8 @@
                     Text="Start"
                     BackgroundColor="#008CAC"
                     TextColor="White"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    Clicked="SelectBtn_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>

@@ -22,5 +22,10 @@ namespace Inspectie_App
             ToolbarItem item = (ToolbarItem)sender;
             Navigation.PushAsync(new AddProjectenPage());
         }
+
+        private void SelectBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new KaartPage());
+        }
     }
 }

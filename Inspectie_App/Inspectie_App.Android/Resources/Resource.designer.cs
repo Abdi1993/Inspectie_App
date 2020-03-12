@@ -5812,13 +5812,16 @@ namespace Inspectie_App.Droid
 			public const int RHDHVlogo = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int tooltip_frame_dark = 2131165308;
+			public const int rsz_2deleteicon = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int tooltip_frame_light = 2131165309;
+			public const int tooltip_frame_dark = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int UsersIcon = 2131165310;
+			public const int tooltip_frame_light = 2131165310;
+			
+			// aapt resource value: 0x7F07007F
+			public const int UsersIcon = 2131165311;
 			
 			static Drawable()
 			{
