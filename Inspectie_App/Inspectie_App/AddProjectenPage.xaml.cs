@@ -15,6 +15,7 @@ namespace Inspectie_App
         public AddProjectenPage()
         {
             InitializeComponent();
+           
         }
 
         private void AddProjectBtn_Clicked(object sender, EventArgs e)
