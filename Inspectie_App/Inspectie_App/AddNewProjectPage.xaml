@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inspectie_App.AddNewProjectPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Voeg een project toe"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Entry x:Name="NewProjectEntry"
+                   Placeholder="Project toevoegen"/>
+            <Button x:Name="AddNewProjectBtn"
+                    Text="Toevoegen"
+                    BackgroundColor="#008CAC"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="AddNewProjectBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

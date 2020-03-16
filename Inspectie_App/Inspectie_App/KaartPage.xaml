@@ -3,11 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sfpdfviewer="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              mc:Ignorable="d"
-             x:Class="Inspectie_App.KaartPage">
+             x:Class="Inspectie_App.KaartPage"
+             >
     <ContentPage.Content>
-        <StackLayout>
+        <Label Text="Kaart"/>
+        <!--<Grid x:Name="mainGird" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="pdfViewerGird" Grid.Row="0">
+                <sfpdfviewer:SfPdfViewer x:Name="pfdViewerControl" InputFileStream="{Binding}" PreserveSignaturePadOrientation="True"/>
+            </Grid>
             
-        </StackLayout>
+        </Grid>-->
     </ContentPage.Content>
 </ContentPage>
