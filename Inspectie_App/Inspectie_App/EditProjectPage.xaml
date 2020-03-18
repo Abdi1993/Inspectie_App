@@ -16,11 +16,13 @@
                         Text="Wijzigen"
                         BackgroundColor="#008CAC"
                         TextColor="White"
+                        Clicked="EditSlctProjectBtn_Clicked"
                         />
                 <Button x:Name="DltSlctProjectBtn"
                         Text="Verwijderen"
                         BackgroundColor="#008CAC"
                         TextColor="White"
+                        Clicked="DltSlctProjectBtn_Clicked"
                         />
             </StackLayout>
         </StackLayout>
